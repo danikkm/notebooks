@@ -1,5 +1,8 @@
 # notebooks
-## Please only use it as a reference.
+## Please only use it as a reference
+
+
+### A series of [Coursera](http://www.coursera.org/) online courses offered by University of Michigan and deeplearning.ai
 
 ### Applied Data Science
 - [Applied Machine Learning](https://github.com/danikkm/notebooks/tree/master/Applied%20Data%20Science/Applied%20Machine%20Learning)
