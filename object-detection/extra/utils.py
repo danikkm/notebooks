@@ -1,9 +1,10 @@
-
 import os
 import io
 import time
 import tarfile
 import pickle
+import matplotlib.pyplot as plt
+import numpy as np
 
 def fetch(url):
   import requests, os, hashlib, tempfile
@@ -25,3 +26,10 @@ def load_cifar():
   X = db[b'data'].reshape((-1, 3, 32, 32))
   Y = np.array(db[b'labels'])
   return X, Y
+
+def imshow(img):
+	img = img / 2 + 0.5
+	npimg = img.numpy()
+	plt.imshow(np.transpose(npimg, (1, 2, 0)))
+	plt.show()
+
