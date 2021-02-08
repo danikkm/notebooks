@@ -4,5 +4,4 @@
 data
  __pycache__/
 *.pyc 
-*.pth
-*.pt
+.vscode
