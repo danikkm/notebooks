@@ -37,3 +37,6 @@ def imshow(img):
   npimg = img.numpy()
   plt.imshow(np.transpose(npimg, (1, 2, 0)))
   plt.show()
+
+def get_key_by_value(dictionary, value):
+  return list(dictionary.keys())[list(dictionary.values()).index(value)]
