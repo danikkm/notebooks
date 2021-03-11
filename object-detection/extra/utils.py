@@ -40,3 +40,6 @@ def imshow(img):
 
 def get_key_by_value(dictionary, value):
   return list(dictionary.keys())[list(dictionary.values()).index(value)]
+
+def is_cuda(model):
+  return next(model.parameters()).is_cuda
