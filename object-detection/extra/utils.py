@@ -44,6 +44,10 @@ def get_key_by_value(dictionary, value):
 def is_cuda(model):
   return next(model.parameters()).is_cuda
 
+def unpickle(path):
+  pickle_off = open(path,'rb')
+  return pickle.load(pickle_off)
+
 class dotdict(dict):
   """dot.notation access to dictionary attributes"""
   __getattr__ = dict.get
