@@ -43,3 +43,9 @@ def get_key_by_value(dictionary, value):
 
 def is_cuda(model):
   return next(model.parameters()).is_cuda
+
+class dotdict(dict):
+  """dot.notation access to dictionary attributes"""
+  __getattr__ = dict.get
+  __setattr__ = dict.__setitem__
+  __delattr__ = dict.__delitem__
