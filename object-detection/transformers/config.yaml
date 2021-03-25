@@ -1,0 +1,42 @@
+# backbone
+numGroups: 8
+growthRate: 32
+numBlocks: [6, 6, 6, 6]
+
+# transformer
+hiddenDims: 512
+numHead: 8
+numEncoderLayer: 6
+numDecoderLayer: 6
+dimFeedForward: 2048
+dropout: 0.1
+numQuery: 100 # 30
+numClass: 90
+
+# dataset
+targetHeight: 38 # 608
+targetWidth: 38 # 608
+
+# training config
+lr: 0.00001
+lrBackbone: 0.00001
+batchSize: 8
+weightDecay: 0.0001
+epochs: 128
+lrDrop: 1000
+clipMaxNorm: 0.1
+
+# loss
+classCost: 1.0
+bboxCost: 5.0
+giouCost: 2.0
+eosCost: 0.1
+
+# miscellaneous
+device: "cuda"
+outputDir: "/checkpoint"
+weightDir: "/checkpoint/coco.pt"
+taskName: "coco"
+numWorkers: 4
+multi: False
+amp: True

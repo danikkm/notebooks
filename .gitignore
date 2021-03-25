@@ -7,3 +7,6 @@ checkpoint
  __pycache__/
 *.pyc 
 .vscode
+.DS_Store
+._.DS_Store
+.logs
